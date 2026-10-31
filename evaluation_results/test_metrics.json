@@ -1,0 +1,87 @@
+{
+  "model_name": "resnet18",
+  "test_samples": 718,
+  "four_class": {
+    "accuracy": 0.9540389972144847,
+    "macro_f1": 0.8974180181678224,
+    "classification_report": {
+      "healthy": {
+        "precision": 0.9581881533101045,
+        "recall": 0.9786476868327402,
+        "f1-score": 0.9683098591549296,
+        "support": 281.0
+      },
+      "rust": {
+        "precision": 0.9423868312757202,
+        "recall": 0.9346938775510204,
+        "f1-score": 0.9385245901639344,
+        "support": 245.0
+      },
+      "phoma": {
+        "precision": 0.9764705882352941,
+        "recall": 0.9940119760479041,
+        "f1-score": 0.9851632047477745,
+        "support": 167.0
+      },
+      "red_spider_mite": {
+        "precision": 0.8333333333333334,
+        "recall": 0.6,
+        "f1-score": 0.6976744186046512,
+        "support": 25.0
+      },
+      "accuracy": 0.9540389972144847,
+      "macro avg": {
+        "precision": 0.9275947265386131,
+        "recall": 0.8768383851079162,
+        "f1-score": 0.8974180181678224,
+        "support": 718.0
+      },
+      "weighted avg": {
+        "precision": 0.9527013458374906,
+        "recall": 0.9540389972144847,
+        "f1-score": 0.9526430510733896,
+        "support": 718.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        275,
+        6,
+        0,
+        0
+      ],
+      [
+        9,
+        229,
+        4,
+        3
+      ],
+      [
+        0,
+        1,
+        166,
+        0
+      ],
+      [
+        3,
+        7,
+        0,
+        15
+      ]
+    ]
+  },
+  "binary_collapsed": {
+    "accuracy": 0.9749303621169917,
+    "f1_score": 0.9792626728110599,
+    "confusion_matrix": [
+      [
+        275,
+        6
+      ],
+      [
+        12,
+        425
+      ]
+    ]
+  }
+}

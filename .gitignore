@@ -1,0 +1,32 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large Checkpoints with Optimizer State (>100MB)
+checkpoints/best_model.pth
+model/best_model.pth
+
+# Note: The clean inference weights (resnet18_coffee_leaf.pth, ~42.7MB)
+# are under GitHub's 100MB limit and CAN be tracked by Git.
+!checkpoints/resnet18_coffee_leaf.pth
+!model/resnet18_coffee_leaf.pth
+
+# Visualizations & report outputs (tracked)
+!evaluation_results/
+!sample_predictions.png
